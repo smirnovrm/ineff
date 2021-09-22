@@ -1,7 +1,7 @@
 {
-  "name": "cat-energy-21",
+  "name": "ineff",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Шаблон сайта консалтинговой фирмы",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.0.2",

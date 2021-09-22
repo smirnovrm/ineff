@@ -1,0 +1,11 @@
+.feature-list {
+
+}
+
+.feature-list__img {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}

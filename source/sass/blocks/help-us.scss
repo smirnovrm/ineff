@@ -1,0 +1,61 @@
+.help-us {
+
+}
+
+.help-us__block h3 {
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.help-us__block p {
+  font-size: $font-size-14;
+  line-height: 18.2px;
+}
+
+.help-us__block p + p {
+  margin-top: 8px;
+}
+
+.help-us__block b {
+  color: $basic-black;
+}
+
+.help-us__list {
+
+  margin-bottom: 14px;
+
+  li {
+    display: flex;
+
+    margin-bottom: 0;
+
+    font-size: $font-size-14;
+    font-weight: 700;
+    line-height: 16.41px;
+    color: $basic-black;
+
+  }
+
+  li + li {
+    margin-top: 12px;
+  }
+
+  li::before {
+    content: '';
+    display: block;
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 0;
+    background-image: url('../../img/icons/list-marker.svg');
+    background-repeat: no-repeat;
+  }
+}
