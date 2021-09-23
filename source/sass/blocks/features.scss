@@ -2,6 +2,10 @@
 
 }
 
+.features__list {
+  @include reset-list;
+}
+
 .features__icon {
   fill: transparent;
 }

@@ -27,7 +27,7 @@
 }
 
 .help-us__list {
-
+  @include reset-list;
   margin-bottom: 14px;
 
   li {
