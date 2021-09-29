@@ -1,3 +1,23 @@
 .page-header {
+  padding-top: 20px;
+  padding-bottom: 21px;
   background-color: $basic-blue;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.page-header__logo {
+  margin-left: 0;
+}
+
+.page-header__contacts {
+  display: none;
+}
+
+.page-header__menu {
+  // margin-top: 44px;
 }

@@ -1,0 +1,57 @@
+.info {
+  padding-top: 152px;
+  padding-bottom: 54px;
+
+  background-image: url('../img/promo-mobile_bg.jpg');
+  background-repeat: no-repeat;
+
+  color: $basic-white;
+
+  h1 {
+
+    // font-family: Roboto;
+    // font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    // color: $basic-white;
+
+  }
+
+  p {
+    // font-style: normal;
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    /* or 31px */
+
+
+    // color: #FFFFFF;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: $basic-white;
+    background-color: $basic-orange;
+
+    border-radius: 8px;
+  }
+}
+
+
