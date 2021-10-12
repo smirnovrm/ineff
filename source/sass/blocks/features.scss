@@ -1,11 +1,64 @@
 .features {
+  padding-top: 52px;
+  padding-bottom: 52px;
 
+  h2 {
+  // font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $basic-blue;
+  }
 }
 
 .features__list {
   @include reset-list;
+
+  margin-top: 28px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 130%;
+
+  color: $basic-black;
+
+  li {
+    display: flex;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 17px;
+
+    border-radius: 20px;
+
+    background-color: #F7F9FC;
+
+
+  }
+
+  li + li {
+    margin-top: 8px;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  p {
+    margin-top: 8px;
+    font-weight: normal;
+  }
 }
 
 .features__icon {
+  align-self: center;
+
+  min-width: 48px;
+  margin-right: 14px;
   fill: transparent;
 }
