@@ -1,6 +1,5 @@
 .info {
-  padding-top: 152px;
-  padding-bottom: 54px;
+  padding-bottom: 60px;
 
   background-image: url('../img/promo-mobile_bg.jpg');
   background-repeat: no-repeat;
@@ -16,10 +15,12 @@
   }
 
   p {
-    margin-top: 16px;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 140%;
+    margin-top: 28px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 130%;
   }
 
   a {
@@ -44,3 +45,13 @@
 }
 
 
+.info--top {
+  padding-top: 152px;
+
+  p {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+  }
+}
