@@ -1,5 +1,37 @@
 .feature-list {
   @include reset-list;
+
+  .heading {
+    font-weight: bold;
+    font-size: $font-size-16;
+    line-height: 19px;
+    color: $basic-darkgray;
+    text-transform: none;
+
+  }
+}
+
+.feature-list__item {
+  padding: 24px;
+
+  background: $basic-background;
+  border-radius: 20px;
+
+  p {
+    max-width: 261px;
+  }
+
+  p + p {
+    margin-top: 8px;
+  }
+}
+
+.feature-list__item + .feature-list__item {
+  margin-top: 8px;
+}
+
+.feature-list__heading {
+  margin-bottom: 12px;
 }
 
 .feature-list__img {

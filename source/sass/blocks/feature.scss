@@ -1,6 +1,22 @@
 .feature {
   p {
-    font-size: 14px;
-    color: #383838;
+    font-size: $font-size-14;
+    line-height: 18px;
+    color: $basic-darkgray;
+  }
+
+  .heading {
+    font-weight: bold;
+    font-size: $font-size-24;
+
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $basic-blue;
+  }
+
+  .feature__list {
+    margin-top: 28px;
   }
 }
