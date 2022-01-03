@@ -1,7 +1,8 @@
 .info {
   padding-bottom: 60px;
 
-  background-image: url('../img/promo-mobile_bg.jpg');
+  background-image: url('../img/more-info-mobile-background.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
 
   color: $basic-white;
@@ -54,4 +55,8 @@
     font-size: 22px;
     line-height: 140%;
   }
+}
+
+.info__form {
+  margin-top: 28px;
 }

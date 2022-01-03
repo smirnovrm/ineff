@@ -1,0 +1,24 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: .03em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f5543f;
+  border-radius: 8px;
+}
+
+.btn--large {
+  width: 100%;
+  max-width: 304px;
+
+  text-transform: uppercase;
+
+  border: 0;
+}
