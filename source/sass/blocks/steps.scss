@@ -1,11 +1,4 @@
-.feature {
-  padding-bottom: 0;
-
-  p {
-    font-size: $font-size-14;
-    line-height: 18px;
-    color: $basic-darkgray;
-  }
+.steps {
 
   .heading {
     font-weight: bold;
@@ -17,8 +10,6 @@
 
     color: $basic-blue;
   }
-
-  .feature__list {
-    margin-top: 28px;
-  }
 }
+
+

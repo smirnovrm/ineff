@@ -7,6 +7,10 @@
 
   color: $basic-white;
 
+  &--top {
+    background-image: url('../img/promo-mobile_bg.jpg');
+  }
+
   h1 {
     font-weight: 900;
     font-size: 34px;

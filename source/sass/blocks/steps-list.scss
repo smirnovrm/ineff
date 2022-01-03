@@ -1,11 +1,94 @@
 .steps-list {
+  @include reset-list;
+  margin-top: 28px;
 
+  font-size: $font-size-14;
+  line-height: 18px;
+
+  counter-reset: section;
 }
 
 .steps-list__item {
-  // display: flex;
-  &::marker {
-    // display: flex;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 75px;
+
+
+  background: $basic-background;
+  border-radius: 20px;
+
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    left: 17px;
+
+    width: 42px;
+    height: 42px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+
+    color: #0039A9;
+
+    background-color: #fff;
+
+    border: 2px solid #0039A9;
+    border-radius: 50%;
+
+    counter-increment: section;
+    content: counters(section,".") " ";
+
+    z-index: 3;
+  }
+
+  &::after {
+    content: '';
+
+    display: flex;
+
+    position: absolute;
+    top: 66px;
+    left: 38px;
+
+    width: 2px;
+    height: 100%;
+
+    background-color: #0039A9;
+
+    z-index: 2;
+  }
+
+  span {
+    font-size: $font-size-16;
+    font-weight: 700;
+
+    line-height: 16.41px;
+  }
+
+  b {
+    margin-top: 12px;
+  }
+
+  p {
+    margin-top: 8px;
   }
 }
 
+.steps-list__item + .steps-list__item {
+  margin-top: 8px;
+}
+
+.steps-list__item:last-child {
+  &::after {
+    display: none;
+  }
+}
