@@ -1,0 +1,50 @@
+.tabs {
+  font-size: $font-size-14;
+}
+
+.tabs__controls {
+  display: flex;
+  justify-content: space-around;
+
+  border-bottom: 2px solid #D3D3D3;
+}
+
+.tabs__control {
+  max-width: 148px;
+  flex: 1;
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  bottom: -2px;
+
+  font-weight: 500;
+  font-size: $font-size-14;
+  line-height: 16px;
+
+  color: $basic-blue;
+
+  border: 0;
+
+  background-color: transparent;
+  background-image: url('../img/icons/tabs.svg');
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 0;
+
+  &--active {
+    // background-color: $basic-blue;
+    // bottom: -2px;
+
+    background-image: url('../img/icons/tabs-active.svg');
+
+    color: $basic-white;
+  }
+}
+
+.tabs__content {
+  display: none;
+
+  &--active {
+    display: flex;
+  }
+}

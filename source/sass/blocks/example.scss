@@ -1,0 +1,31 @@
+.example {
+  margin-top: 52px;
+
+  background-color: $basic-background;
+
+  p {
+    margin-top: 36px;
+
+    font-weight: 500;
+    font-size: 22px;
+    line-height:29px;
+
+    color: $basic-darkgray;
+  }
+
+  iframe {
+    height: 450px;
+  }
+}
+
+.example__tabs {
+  margin-top: 28px;
+}
+
+.example__form {
+  margin-top: 16px;
+}
+
+.example__btn {
+  margin-top: 8px;
+}

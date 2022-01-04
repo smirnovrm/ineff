@@ -39,7 +39,7 @@
       <div class="wrapper">
         <h1>Коньюктурный анализ «под ключ»</h1>
         <p>Выполним конъюнктурный анализ в соответствии с вашими требованиями</p>
-        <a class="btn" href="">Бесплатная консультация</a>
+        <a class="btn btn--large" href="">Бесплатная консультация</a>
       </div>
     </section>
 
@@ -184,7 +184,7 @@
         <form class="info__form form" action="" method="post">
           <input class="form__input input-text" type="text" placeholder="Имя">
           <input class="form__input input-text" type="tel" placeholder="+7 (123) 456 78 90">
-          <button class="btn btn--large" type="submit">Отправить заявку</button>
+          <button class="info__btn btn btn--large" type="submit">Отправить заявку</button>
         </form>
       </div>
     </section>
@@ -312,19 +312,33 @@
 
     <section class="page-main__section example">
       <div class="wrapper">
-        <h2>Пример отчета</h2>
-        <details>
+        <h2 class="heading">Пример отчета</h2>
+        <div class="example__tabs tabs">
+          <div class="tabs__controls">
+            <button class="tabs__control tabs__control--active">Новая форма</button>
+            <button class="tabs__control">Старая форма</button>
+          </div>
+          <div class="tabs__contents">
+            <div class="tabs__content tabs__content--active">
+              <iframe src="" frameborder="0"></iframe>
+            </div>
+            <div class="tabs__content">
+              <iframe src="" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- <details>
           <summary>Новая форма</summary>
           Контент
         </details>
         <details>
           <summary>Старая форма</summary>
           Контент
-        </details>
+        </details> -->
         <p>Укажите ваш email и получите возможность моментально скачать пример отчета К.А.</p>
-        <form action="">
-          <input type="email" name="mail" placeholder="Email">
-          <button type="submit">Скачать</button>
+        <form class="example__form form" action="">
+          <input class="form__input input-text" type="email" name="mail" placeholder="Email">
+          <button class="example__btn btn btn--large" type="submit">Скачать</button>
         </form>
       </div>
     </section>
