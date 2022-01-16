@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#0f2f95">
+  <meta name="theme-color" content="#ffffff">
   <title>ИНЭФФ - конъюктурный анализ "под ключ"</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f2f95">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body page-body">
@@ -380,14 +387,26 @@
         <p>Нам доверяют</p>
         <div class="clients__slider slider slider--centered">
           <div class="slider__slides">
-            <a class="slider__slide">
-              <span class="visually-hidden">СПКБ Энергия</span>
-              <img src="" alt="">
-            </a>
-            <a class="slider__slide">
-              <span class="visually-hidden">Дорпроект 33</span>
-              <img src="" alt="">
-            </a>
+            <div class="slider__slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/spkb-logo-tablet.webp 1x, img/spkb-logo-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 568px)" srcset="img/spkb-logo-mobile-landspace.webp 1x, img/spkb-logo-mobile-landspace@2x.webp 2x">
+                <source type="image/webp" srcset="img/spkb-logo-mobile.webp 1x, img/spkb-logo-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/spkb-logo-tablet.png 1x, img/spkb-logo-tablet@2x.png 2x">
+                <source media="(min-width: 568px)" srcset="img/spkb-logo-mobile-landspace.png 1x, img/spkb-logo-mobile-landspace@2x.png 2x">
+                <img src="img/spkb-logo-mobile.png" srcset="img/spkb-logo-mobile@2x.png 2x" width="131" height="44" alt="Логотип СПКБ Энергия">
+              </picture>
+            </div>
+            <div class="slider__slide">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/dorproekt-logo-tablet.webp 1x, img/dorproekt-logo-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 568px)" srcset="img/dorproekt-logo-mobile-landspace.webp 1x, img/dorproekt-logo-mobile-landspace@2x.webp 2x">
+                <source type="image/webp" srcset="img/dorproekt-logo-mobile.webp 1x, img/dorproekt-logo-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/dorproekt-logo-tablet.png 1x, img/dorproekt-logo-tablet@2x.png 2x">
+                <source media="(min-width: 568px)" srcset="img/dorproekt-logo-mobile-landspace.png 1x, img/dorproekt-logo-mobile-landspace@2x.png 2x">
+                <img src="img/dorproekt-logo-mobile.png" srcset="img/dorproekt-logo-mobile@2x.png 2x" width="110" height="64" alt="Логотип Дорпроект 33">
+              </picture>
+            </div>
           </div>
           <div class="slider__dots slider__dots--clients">
             <a class="slider__dot slider__dot--active" href="#"><span class="visually-hidden">СПКБ Энергия</span></a>
