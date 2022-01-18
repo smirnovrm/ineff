@@ -2,6 +2,16 @@
   @include reset-list;
 }
 
+.menu-footer__item + .menu-footer__item {
+  margin-top: 24px;
+}
+
 .menu-footer__link {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-decoration: none;
+
+  color: $basic-white;
 
 }

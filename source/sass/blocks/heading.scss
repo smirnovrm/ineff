@@ -12,5 +12,12 @@
     color: $basic-white;
     letter-spacing: 0.025em;
   }
+
+  &--subhead {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: normal;
+    text-transform: none;
+  }
 }
 

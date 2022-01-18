@@ -2,6 +2,15 @@
   @include reset-list;
 }
 
-.products-menu__item {
+.products-menu__item + .products-menu__item {
+  margin-top: 25px;
+}
 
+.products-menu__link {
+  font-size: 14px;
+  line-height: 18px;
+
+  text-decoration: none;
+
+  color: $basic-white;
 }

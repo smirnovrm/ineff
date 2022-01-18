@@ -5,4 +5,20 @@
   .wrapper {
     font-size: 14px;
   }
+
+  > .wrapper {
+    padding-bottom: 46px;
+  }
+}
+
+.page-footer__navigation {
+  margin-top: 32px;
+}
+
+.page-footer__contact {
+  margin-top: 43px;
+}
+
+.page-footer__products {
+  margin-top: 43px;
 }
