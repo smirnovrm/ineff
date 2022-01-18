@@ -1,0 +1,26 @@
+.questions {
+  background-image: url('../img/question-mobile-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: $basic-white;
+
+  p {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+}
+
+.questions__form {
+  margin-top: 24px;
+
+  .form__input + .form__input {
+    margin-top: 12px;
+  }
+}
+
+.questions__btn {
+  margin-top: 12px;
+}
