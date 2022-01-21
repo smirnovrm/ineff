@@ -1,0 +1,42 @@
+.modal {
+  padding-top: 79px;
+  padding-bottom: 55px;
+
+  position: relative;
+
+  background-color: $basic-background;
+
+  border-radius: 20px;
+
+  .wrapper {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  p {
+    line-height: 19px;
+    color: $basic-black;
+  }
+}
+
+.modal--hide {
+  display: none;
+}
+
+.modal__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.modal__wrapper {
+
+}
+
+.modal__form {
+  margin-top: 15px;
+}
