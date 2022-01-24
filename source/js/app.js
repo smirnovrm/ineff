@@ -22,6 +22,21 @@ window.addEventListener('DOMContentLoaded', () => {
       tab.classList.add('tabs__control--active');
       contents[index].classList.add('tabs__content--active');
     });
-  })
+  });
+
+  const modalButton = document.querySelector('#modal');
+  const closeModalButton = document.querySelector('#close-modal');
+  const modal = document.querySelector('.modal');
+
+  modalButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    modal.classList.remove('modal--hide');
+    document.body.style.overflow = 'hidden';
+  });
+
+  closeModalButton.addEventListener('click', () => {
+    modal.classList.add('modal--hide');
+    document.body.style.overflow = '';
+  });
 
 });
