@@ -1,112 +1,144 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <head>
-  <meta charset="utf-8">
   <title>Кейсы | ИНЭФФ - конъюктурный анализ "под ключ"</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body page-body">
   <header class="page__header page-header">
-    <a class="page-header__logo logo" href="">
-      <img src="" alt="Логотип ИНЭФФ">
-    </a>
-    <div class="page-header__contacts">
-      <a href="tel:+78126029199">+7 812 602 91 99</a>
-      <a href="mailto:info@ineff.ru">info@ineff.ru</a>
-    </div>
-    <div class="page-header__menu main-menu">
-      <button><span class="visually-hidden">Меню</span></button>
-      <ul class="main-menu__list">
-        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="news.html">Новости</li>
-        <li class="main-menu__item"><a class="main-menu__link" href="about-company.html">О компании</li>
-        <li class="main-menu__item"><a class="main-menu__link">Кейсы</li>
-        <li class="main-menu__item"><a class="main-menu__link" href="contacts.html">Контакты</li>
-      </ul>
+    <div class="wrapper">
+      <a class="page-header__logo logo" href="">
+        <img src="img/icons/logo.svg" width="96" height="59" alt="Логотип ИНЭФФ">
+      </a>
+      <div class="page-header__contacts">
+        <a href="tel:+78126029199">+7 812 602 91 99</a>
+        <a href="mailto:info@ineff.ru">info@ineff.ru</a>
+      </div>
+      <div class="page-header__menu main-menu">
+        <button class="main-menu__button">
+          <span class="visually-hidden">Меню</span>
+          <svg width="45" height="45" role="img">
+            <use xlink:href="img/sprite.svg#burger"></use>
+          </svg>
+        </button>
+        <ul class="main-menu__list">
+          <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="news.html">Новости</li>
+          <li class="main-menu__item"><a class="main-menu__link" href="about-company.html">О компании</li>
+          <li class="main-menu__item"><a class="main-menu__link main-menu__link--active">Кейсы</li>
+          <li class="main-menu__item"><a class="main-menu__link" href="contacts.html">Контакты</li>
+        </ul>
+      </div>
     </div>
   </header>
   <main class="page__main page-main">
     <h1 class="visually-hidden">Примеры выполненных кейсов</h1>
     <div class="page-main__section intro">
-      <span>Кейсы</span>
+      <div class="wrapper">
+        <span class="heading heading--large heading--light">Кейсы</span>
+      </div>
     </div>
 
     <section class="page-main__section cases">
       <h2 class="visually-hidden">Кейсы</h2>
-
+      <div class="wrapper">
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>41%</span>
-              <p>Увеличение производительности инженеров-сметчиков</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>41%</span>
-              <p>Увеличение производительности инженеров-сметчиков</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>41%</span>
-              <p>Увеличение производительности инженеров-сметчиков</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>41%</span>
-              <p>Увеличение производительности инженеров-сметчиков</p>
-            </li>
-          </ul>
+          <!-- <div class="wrapper"> -->
+            <div class="case__image case-image case-image--fullscreen">
+              <figure>
+                <source type="image/webp" srcset="img/vnipi-mobile.webp 1x, img/vnipi-mobile@2x.webp 2x">
+                <img src="img/vnipi-mobile.jpg" srcset="img/vnipi-mobile@2x.jpg 2x" alt="">
+              </figure>
+              <div class="case__stats case-stats case-stats--fullscreen">
+                <h3 class="visually-hidden">Статистика по проекту</h3>
+                <ul class="statistics-list">
+                  <li class="statistics-list__item">
+                    <span>41%</span>
+                    <p>Увеличение производительности инженеров-сметчиков</p>
+                  </li>
+                  <li class="statistics-list__item">
+                    <span>23%</span>
+                    <p>Уменьшение затрат на разработку смет по одному проекту</p>
+                  </li>
+                  <li class="statistics-list__item">
+                    <span>76%</span>
+                    <p>Сокращение среднего времени получения коммерческого предложения</p>
+                  </li>
+                  <li class="statistics-list__item">
+                    <span>33%</span>
+                    <p>Снижение среднего срока разработки сметной документации с 3 мес. до 2 мес.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          <!-- </div> -->
         </header>
-        <main>
-          <div>
-            <h3>ВНИПИ ПТ</h3>
-            <time datetime="2019">2019</time>
-          </div>
-          <span>Задача</span>
-          <p>Один из ведущих проектных институтов ГК «Росатом» был вынужден увеличить срок разработки проектно-сметной документации из-за возросшего объема работ по конъюнктурному анализу. Расширение штата сметного отдела не привело к должному результату и повлекло увеличение затрат на оплату труда и снижение прибыли.</p>
-          <span>Решение проблемы</span>
-          <p>Более детальный анализ ситуации позволил выявить следующие причины неэффективной работы:</p>
-          <ul>
-            <li>Отсутствие четкого разделения обязанностей по разработке сметной документации и проведению конъюнктурного анализа между специалистами;</li>
-            <li>Распределение 50 % рабочего времени инженеров-сметчиков на переговоры с поставщиками;</li>
-            <li>Реализация проектов в длительные сроки (от 1 года и более с момента запросов коммерческих предложений). Это привело к значительному росту процента отказов в предоставлении коммерческих предложений от поставщиков;</li>
-            <li>Трата большого количества времени на поиск поставщиков и получение от них коммерческих предложений.</li>
-          </ul>
-          <span>Методы решения</span>
-          <p>Аутсорсинг конъюнктурного анализа в ООО «ИНЭФФ» позволил сократить сроки разработки сметной документации с 3 до 2 месяцев. Это стало возможно благодаря:
-          </p>
-          <ul>
-            <li>Сокращению среднего срока получения 1 КП, разрабатываемого опытными специалистами компании;</li>
-            <li>Нулевому проценту отказов в предоставлении КП за счет грамотного ведения переговоров с поставщиками и производителями;</li>
-            <li>Использованию программного обеспечения «СметаПлан», которое позволяет автоматизировать рассылку запросов поставщикам и составлять отчет по конъюнктурному анализу.</li>
-            <li>Трата большого количества времени на поиск поставщиков и получение от них коммерческих предложений.</li>
-          </ul>
-          <span>Результат</span>
-          <p>Как результат, производительность сметного отдела увеличилась на 41 %. Благодаря этому в проектном институте была проведена оптимизация численности отдела. Это позволило сократить на 30% расходы на содержание отдела и на 23% затраты на разработку смет по одному проекту, не повлияв на достигнутую производительность.</p>
+        <main class="case__main case-main">
+          <!-- <div class="wrapper"> -->
+            <div>
+              <h3>ВНИПИ ПТ</h3>
+              <time datetime="2019">2019</time>
+            </div>
+            <span>Задача</span>
+            <p>Один из ведущих проектных институтов ГК «Росатом» был вынужден увеличить срок разработки проектно-сметной документации из-за возросшего объема работ по конъюнктурному анализу. Расширение штата сметного отдела не привело к должному результату и повлекло увеличение затрат на оплату труда и снижение прибыли.</p>
+            <span>Решение проблемы</span>
+            <p>Более детальный анализ ситуации позволил выявить следующие причины неэффективной работы:</p>
+            <ul>
+              <li>Отсутствие четкого разделения обязанностей по разработке сметной документации и проведению конъюнктурного анализа между специалистами;</li>
+              <li>Распределение 50 % рабочего времени инженеров-сметчиков на переговоры с поставщиками;</li>
+              <li>Реализация проектов в длительные сроки (от 1 года и более с момента запросов коммерческих предложений). Это привело к значительному росту процента отказов в предоставлении коммерческих предложений от поставщиков;</li>
+              <li>Трата большого количества времени на поиск поставщиков и получение от них коммерческих предложений.</li>
+            </ul>
+            <span>Методы решения</span>
+            <p>Аутсорсинг конъюнктурного анализа в ООО «ИНЭФФ» позволил сократить сроки разработки сметной документации с 3 до 2 месяцев. Это стало возможно благодаря:
+            </p>
+            <ul>
+              <li>Сокращению среднего срока получения 1 КП, разрабатываемого опытными специалистами компании;</li>
+              <li>Нулевому проценту отказов в предоставлении КП за счет грамотного ведения переговоров с поставщиками и производителями;</li>
+              <li>Использованию программного обеспечения «СметаПлан», которое позволяет автоматизировать рассылку запросов поставщикам и составлять отчет по конъюнктурному анализу.</li>
+              <li>Трата большого количества времени на поиск поставщиков и получение от них коммерческих предложений.</li>
+            </ul>
+            <span>Результат</span>
+            <p>Как результат, производительность сметного отдела увеличилась на 41 %. Благодаря этому в проектном институте была проведена оптимизация численности отдела. Это позволило сократить на 30% расходы на содержание отдела и на 23% затраты на разработку смет по одному проекту, не повлияв на достигнутую производительность.</p>
+          <!-- </div> -->
         </main>
       </article>
 
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>25%</span>
-              <p>Увеличение производительности инженеров-сметчиков</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>41%</span>
-              <p>Сокращение среднего времени получения коммерческого предложения</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>33%</span>
-              <p>Быстрее были поданы проектные документы в экспертизу</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>15%</span>
-              <p>Уменьшение затрат на разработку смет</p>
-            </li>
-          </ul>
+          <div class="case__image case-image case-image--fullscreen">
+            <figure>
+              <source type="image/webp" srcset="img/prro-mobile.webp 1x, img/prro-mobile@2x.webp 2x">
+              <img src="img/prro-mobile.jpg" srcset="img/prro-mobile@2x.jpg 2x" alt="">
+            </figure>
+            <div class="case__stats case-stats case-stats--fullscreen">
+              <h3 class="visually-hidden">Статистика по проекту</h3>
+              <ul class="statistics-list">
+                <li class="statistics-list__item">
+                  <span>25%</span>
+                  <p>Увеличение производительности инженеров-сметчиков</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>41%</span>
+                  <p>Сокращение среднего времени получения коммерческого предложения</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>33%</span>
+                  <p>Быстрее были поданы проектные документы в экспертизу</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>15%</span>
+                  <p>Уменьшение затрат на разработку смет</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main>
+        <main class="case__main case-main">
           <div>
             <h3>ООО «ПРРО»</h3>
             <time datetime="12-2019">Декабрь 2019</time>
@@ -121,23 +153,31 @@
 
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>21%</span>
-              <p>Уменьшение затрат на разработку смет по этому проекту</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>32%</span>
-              <p>Увеличение производительности инженеров-сметчиков</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>100%</span>
-              <p>Удалось избежать штрафных санкций заказчика проекта</p>
-            </li>
-          </ul>
+          <div class="case__image case-image">
+            <figure>
+              <source type="image/webp" srcset="img/military-mobile.webp 1x, img/military-mobile@2x.webp 2x">
+              <img src="img/military-mobile.jpg" srcset="img/military-mobile@2x.jpg 2x" alt="">
+            </figure>
+            <div class="case__stats case-stats">
+              <h3 class="visually-hidden">Статистика по проекту</h3>
+              <ul class="statistics-list">
+                <li class="statistics-list__item">
+                  <span>21%</span>
+                  <p>Уменьшение затрат на разработку смет по этому проекту</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>32%</span>
+                  <p>Увеличение производительности инженеров-сметчиков</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>100%</span>
+                  <p>Удалось избежать штрафных санкций заказчика проекта</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main>
+        <main class="case__main case-main">
           <div>
             <h3>Военный городок</h3>
             <time datetime="02-2020">февраль, 2020</time>
@@ -157,23 +197,31 @@
 
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>51%</span>
-              <p>Снижение среднего срока разработки сметной документации на 2 мес</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>18%</span>
-              <p>Уменьшение затрат на разработку сметы по одному проекту</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>100%</span>
-              <p>Были выполнены требования экспертизы к документам</p>
-            </li>
-          </ul>
+          <div class="case__image case-image">
+            <figure>
+              <source type="image/webp" srcset="img/gazproekt-mobile.webp 1x, img/gazproekt-mobile@2x.webp 2x">
+              <img src="img/gazproekt-mobile.jpg" srcset="img/gazproekt-mobile@2x.jpg 2x" alt="">
+            </figure>
+            <div class="case__stats case-stats">
+              <h3 class="visually-hidden">Статистика по проекту</h3>
+              <ul class="statistics-list">
+                <li class="statistics-list__item">
+                  <span>51%</span>
+                  <p>Снижение среднего срока разработки сметной документации на 2 мес</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>18%</span>
+                  <p>Уменьшение затрат на разработку сметы по одному проекту</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>100%</span>
+                  <p>Были выполнены требования экспертизы к документам</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main>
+        <main class="case__main case-main">
           <div>
             <h3>АО «Газпроектинжиринг»</h3>
             <time datetime="12-2020">декабрь, 2020</time>
@@ -190,27 +238,35 @@
 
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>41%</span>
-              <p>Увеличение производительности специалистов отдела снабжения</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>41%</span>
-              <p>Уменьшение затрат на обоснование НМЦК</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>76%</span>
-              <p>Сокращение среднего времени получения коммерческого предложения</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>50%</span>
-              <p>Снижение срока определения НМЦК с 2 мес. до 1 мес</p>
-            </li>
-          </ul>
+          <div class="case__image case-image">
+            <figure>
+              <source type="image/webp" srcset="img/nmck-case-mobile.webp 1x, img/nmck-case-mobile@2x.webp 2x">
+              <img src="img/nmck-case-mobile.jpg" srcset="img/nmck-case-mobile@2x.jpg 2x" alt="">
+            </figure>
+            <div class="case__stats case-stats">
+              <h3 class="visually-hidden">Статистика по проекту</h3>
+              <ul class="statistics-list">
+                <li class="statistics-list__item">
+                  <span>41%</span>
+                  <p>Увеличение производительности специалистов отдела снабжения</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>41%</span>
+                  <p>Уменьшение затрат на обоснование НМЦК</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>76%</span>
+                  <p>Сокращение среднего времени получения коммерческого предложения</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>50%</span>
+                  <p>Снижение срока определения НМЦК с 2 мес. до 1 мес</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main>
+        <main class="case__main case-main">
           <div>
             <h3>НМЦК</h3>
             <time datetime="2020">2020</time>
@@ -226,27 +282,35 @@
 
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-          </ul>
+          <div class="case__image case-image">
+            <figure>
+              <source type="image/webp" srcset="img/builders-case-mobile.webp 1x, img/builders-case-mobile@2x.webp 2x">
+              <img src="img/builders-case-mobile.jpg" srcset="img/builders-case-mobile@2x.jpg 2x" alt="">
+            </figure>
+            <div class="case__stats case-stats">
+              <h3 class="visually-hidden">Статистика по проекту</h3>
+              <ul class="statistics-list">
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main>
+        <main class="case__main case-main">
           <div>
             <h3>Застройщики</h3>
             <time datetime="2020">2020</time>
@@ -273,27 +337,35 @@
 
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-          </ul>
+          <div class="case__image case-image">
+            <figure>
+              <source type="image/webp" srcset="img/studio44-mobile.webp 1x, img/studio44-mobile@2x.webp 2x">
+              <img src="img/studio44-mobile.jpg" srcset="img/studio44-mobile@2x.jpg 2x" alt="">
+            </figure>
+            <div class="case__stats case-stats">
+              <h3 class="visually-hidden">Статистика по проекту</h3>
+              <ul class="statistics-list">
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main>
+        <main class="case__main case-main">
           <div>
             <h3>«Студия 44»</h3>
             <time datetime="2020">2020</time>
@@ -308,27 +380,35 @@
 
       <article class="case">
         <header class="case__header">
-          <h3 class="visually-hidden">Статистика</h3>
-          <ul class="case__statistics statistics-list">
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-            <li class="statistics-list__item">
-              <span>00%</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
-            </li>
-          </ul>
+          <div class="case__image case-image">
+            <figure>
+              <source type="image/webp" srcset="img/ugra-mobile.webp 1x, img/ugra-mobile@2x.webp 2x">
+              <img src="img/ugra-mobile.jpg" srcset="img/ugra-mobile@2x.jpg 2x" alt="">
+            </figure>
+            <div class="case__stats case-stats">
+              <h3 class="visually-hidden">Статистика по проекту</h3>
+              <ul class="statistics-list">
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+                <li class="statistics-list__item">
+                  <span>00%</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus vitae ut gravida viverra senectus.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main>
+        <main class="case__main case-main">
           <div>
             <h3>ООО «Югра-нефтегазпроект»</h3>
             <time datetime="2020">2020</time>
@@ -341,67 +421,91 @@
           <p>Результатом сотрудничества с ИНЭФФ стало сокращение сроков подготовки сметной документации в среднем на 2 недели и отсутствие штрафных санкций со стороны заказчика за счет своевременной подачи проекта на экспертизу.</p>
         </main>
       </article>
+    </div>
     </section>
 
     <section class="page-main__section questions">
-      <h2>Запись на консультацию</h2>
-      <p>Остались вопросы</p>
-      <p>Оставьте заявку. Мы свяжемся с вами в течении 30 минут и бесплатно вас проконсультируем</p>
-      <form action="">
-        <input type="text" placeholder="Имя">
-        <input type="tel" placeholder="+7 (123) 456 78 90">
-        <button type="submit">Отправить заявку</button>
-      </form>
+      <div class="wrapper">
+        <h2 class="visually-hidden">Запись на консультацию</h2>
+        <span class="heading heading--light">Остались вопросы</span>
+        <p>Оставьте заявку. Мы свяжемся с вами в течении 30 минут и бесплатно вас проконсультируем</p>
+        <form class="questions__form form" action="">
+          <input class="form__input input-text" type="text" placeholder="Имя">
+          <input class="form__input input-text" type="tel" placeholder="+7 (123) 456 78 90">
+          <button class="questions__btn btn btn--large" type="submit">Отправить заявку</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="page__footer page-footer">
-    <h2>Дополнительные материалы</h2>
-    <a class="page-footer__logo logo" href="">
-      <img src="" alt="Логотип ИНЭФФ">
-    </a>
-    <div class="page-footer__navigation navigation">
-      <h3>Навигация по сайту</h3>
-      <ul class="navigation__menu menu-footer">
-        <li class="menu-footer__item">
-          <a class="menu-footer__link" href="">Главная</a>
-        </li>
-        <li class="menu-footer__item">
-          <a class="menu-footer__link" href="">Новости</a>
-        </li>
-        <li class="menu-footer__item">
-          <a class="menu-footer__link" href="">О компании</a>
-        </li>
-        <li class="menu-footer__item">
-          <a class="menu-footer__link" href="">Кейсы</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__contact contact">
-      <h3>Контактная информация</h3>
-      <a href="mailto:info@ineff.ru">info@ineff.ru</a>
-      <a href="tel:+78126029199">+7 (812) 602 91 99</a>
-      <address>г. Санкт-Петербург, ул. Краснопутиловская, 69</address>
-      <a href="#">Скачать реквизиты</a>
-    </div>
-    <div class="page-footer__products products">
-      <h3>Дистрибуируемые продукты</h3>
-      <ul class="products__menu products-menu">
-        <li class="products-menu__item">
-          <a class="products-menu__link" href="">СметаПлан</a>
-        </li>
-        <li class="products-menu__item">
-          <a class="products-menu__link" href="">Индиго.Конструктор</a>
-        </li>
-        <li class="products-menu__item">
-          <a class="products-menu__link" href="">NormaCS</a>
-        </li>
-      </ul>
+    <div class="wrapper">
+      <h2 class="visually-hidden">Дополнительные материалы</h2>
+      <a class="page-footer__logo logo" href="">
+        <img src="img/icons/logo.svg" width="79" height="48" alt="Логотип ИНЭФФ">
+      </a>
+      <div class="page-footer__navigation navigation">
+        <h3 class="heading--subhead">Навигация по сайту</h3>
+        <ul class="menu-footer navigation__menu">
+          <li class="menu-footer__item">
+            <a class="menu-footer__link" href="">Главная</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link" href="">Новости</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link" href="">О компании</a>
+          </li>
+          <li class="menu-footer__item">
+            <a class="menu-footer__link" href="">Кейсы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__contact contact">
+        <h3 class="heading--subhead">Контактная информация</h3>
+        <a href="mailto:info@ineff.ru">info@ineff.ru</a>
+        <a href="tel:+78126029199">+7 (812) 602 91 99</a>
+        <address>г. Санкт-Петербург, ул.&nbsp;Краснопутиловская, 69</address>
+        <a href="#">Скачать реквизиты</a>
+      </div>
+      <div class="page-footer__products products">
+        <h3 class="heading--subhead">Дистрибуируемые продукты</h3>
+        <ul class="products-menu products__menu">
+          <li class="products-menu__item">
+            <a class="products-menu__link" href="">СметаПлан</a>
+          </li>
+          <li class="products-menu__item">
+            <a class="products-menu__link" href="">Индиго.Конструктор</a>
+          </li>
+          <li class="products-menu__item">
+            <a class="products-menu__link" href="">NormaCS</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="page-footer__copyright copyright">
-      <a href="">Политика конфиденциальности</a>
-      <p>Copyright © 2015-2021 ООО "ИНЭФФ". Все права защищены.</p>
+      <div class="wrapper">
+        <a href="">Политика конфиденциальности</a>
+        <p>Copyright © 2015-2022 ООО "ИНЭФФ". Все права защищены.</p>
+      </div>
     </div>
   </footer>
+  <div class="modal modal--hide">
+    <button class="modal__close" id="close-modal"><img src="img/icons/close.svg" alt=""></button>
+    <div class="modal__wrapper wrapper">
+      <h3 class="visually-hidden">Форма обратной связи</h3>
+      <p>
+        Оставьте свои контактные данные.
+        Наш специалист свяжется с вами
+        в течении 30 минут, чтобы проконсультировать
+      </p>
+      <form class="modal__form form" action="">
+        <input class="form__input input-text" type="text" placeholder="Имя" required>
+        <input class="form__input input-text" type="tel" placeholder="+7 (123) 456 78 90" required>
+        <button class="questions__btn btn btn--large" type="submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/app.min.js"></script>
 </body>
 </html>

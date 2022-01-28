@@ -1,0 +1,20 @@
+.case-image {
+
+  position: relative;
+
+  &--fullscreen {
+    margin-left: -8px;
+    margin-right: -8px;
+
+    // padding-left: 16px;
+
+    @media (min-width: $mobile-land) {
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

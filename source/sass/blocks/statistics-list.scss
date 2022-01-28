@@ -1,0 +1,39 @@
+.statistics-list {
+  @include reset-list;
+}
+
+.statistics-list__item {
+  display: flex;
+  align-items: center;
+
+  * + * {
+    margin-left: 6px;
+  }
+
+  span {
+    min-width: 62px;
+
+    font-size: 24px;
+    line-height: 31px;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: right;
+
+    color: $list-accent;
+  }
+}
+
+.case-stats--fullscreen .statistics-list__item {
+  * + * {
+    margin-left: 0;
+  }
+
+  span {
+    text-align: left;
+  }
+}
+
+.statistics-list__item + .statistics-list__item {
+  margin-top: 12px;
+}
