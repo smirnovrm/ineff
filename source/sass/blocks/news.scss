@@ -1,0 +1,54 @@
+.news {
+
+}
+
+.news + .news {
+  margin-top: 8px;
+}
+
+.news__main {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 18px;
+  padding-right: 42.54px;
+  padding-bottom: 34px;
+  padding-left: 42.46px;
+
+  background: $basic-background;
+  border: 1px solid $article-border-color;
+  border-radius: 0px 0px 20px 20px;
+
+  font-size: 14px;
+
+  * + * {
+    margin-top: 12px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h3 {
+    font-weight: bold;
+    line-height: 16.41px;
+
+    color: $basic-black;
+  }
+
+  p {
+    line-height: 18px;
+
+    color: $basic-black;
+  }
+
+  time {
+    line-height: 18.2px;
+
+    color: $special-time-gray;
+  }
+}
+
+.news__btn-load {
+  margin-top: 32px;
+}
