@@ -12,4 +12,5 @@ source/css/*.css
 source/css/*.map
 source/img/design/*
 source/pixel-glass
+build/
 Thumbs.db
