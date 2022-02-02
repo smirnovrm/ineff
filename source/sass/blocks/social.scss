@@ -1,0 +1,17 @@
+.social {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  font-size: 0;
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__icon {
+  fill: transparent;
+}
