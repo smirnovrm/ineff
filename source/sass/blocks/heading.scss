@@ -8,6 +8,10 @@
 
   color: $basic-blue;
 
+  &--letter {
+    letter-spacing: 0.029em;
+  }
+
   &--light {
     color: $basic-white;
     letter-spacing: 0.025em;
