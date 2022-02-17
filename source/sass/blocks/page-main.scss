@@ -5,6 +5,11 @@
 .page-main__section {
   padding-top: 52px;
   padding-bottom: 52px;
+
+  @media (min-width: $mobile-land) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
 .page-main__clients {

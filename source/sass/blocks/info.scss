@@ -7,9 +7,13 @@
 
   color: $basic-white;
 
-  &--top {
-    background-image: url('../img/promo-mobile_bg.jpg');
+  @media (min-width: $mobile-land) {
+    padding-bottom: 47px;
   }
+
+  // &--top {
+  //   background-image: url('../img/promo-mobile_bg.jpg');
+  // }
 
   h1 {
     font-weight: 900;
@@ -17,6 +21,10 @@
     line-height: 40px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+
+    @media (min-width: $mobile-land) {
+      max-width: 431px;
+    }
   }
 
   p {
@@ -52,16 +60,35 @@
 
 .info--top {
   padding-top: 152px;
+  background-image: url('../img/promo-mobile_bg.jpg');
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/promo-mobile_bg@2x.jpg');
+  }
+
+  @media (min-width: $mobile-land) {
+    padding-top: 40px;
+    background-image: url('../img/promo-mobile-landspace_bg.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-mobile-landspace_bg@2x.jpg');
+    }
+  }
 
   p {
     margin-top: 16px;
     font-weight: 500;
     font-size: 22px;
     line-height: 140%;
+
+    @media (min-width: $mobile-land) {
+      margin-top: 22px;
+    }
   }
 
   .btn {
     margin-top: 30px;
+    max-width: 330px;
   }
 }
 

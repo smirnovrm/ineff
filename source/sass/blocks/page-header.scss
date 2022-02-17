@@ -3,6 +3,13 @@
   padding-bottom: 21px;
   background-color: $basic-blue;
 
+  @media (min-width: $mobile-land) {
+    padding-top: 26px;
+    padding-bottom: 28px;
+
+    position: relative;
+  }
+
   .wrapper {
     position: relative;
     display: flex;
@@ -16,6 +23,30 @@
 
 .page-header__contacts {
   display: none;
+
+  @media (min-width: $mobile-land) {
+    display: flex;
+    align-items: center;
+
+    margin-left: 49px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  a {
+    @media (min-width: $mobile-land) {
+      text-decoration: none;
+      color: $basic-white;
+    }
+  }
+
+  a + a {
+    @media (min-width: $mobile-land) {
+      margin-left: 26px;
+    }
+  }
 }
 
 .page-header__menu {

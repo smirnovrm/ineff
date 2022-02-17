@@ -4,10 +4,18 @@
 
 .help-us__block {
   margin-top: 20px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 32px;
+  }
 }
 
 .help-us__constructor {
   margin-top: 28px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 35px;
+  }
 }
 
 .help-us__block h3 {
@@ -19,6 +27,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $mobile-land) {
+    margin-bottom: 23px;
+  }
 }
 
 .help-us__block p {
@@ -32,6 +44,14 @@
 
 .help-us__block b {
   color: $basic-black;
+}
+
+.help-us__block img {
+  margin-top: 20px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 32px;
+  }
 }
 
 .help-us__list {
@@ -48,10 +68,18 @@
     line-height: 16.41px;
     color: $basic-black;
 
+    @media (min-width: $mobile-land) {
+      max-width: 470px;
+      align-items: center;
+    }
   }
 
   li + li {
     margin-top: 12px;
+
+    @media (min-width: $mobile-land) {
+      margin-top: 8px;
+    }
   }
 
   li::before {

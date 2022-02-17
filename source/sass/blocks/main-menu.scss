@@ -1,5 +1,16 @@
 .main-menu {
   width: 100%;
+
+  @media (min-width: $mobile-land) {
+    max-width: 331px;
+
+    position: absolute;
+    top: 87px;
+    right: -16px;
+    background-color: $basic-blue;
+
+    z-index: 1;
+  }
 }
 
 .main-menu__button {
@@ -13,6 +24,12 @@
   position: absolute;
   top: 7px;
   right: 0;
+
+  @media (min-width: $mobile-land) {
+    position: absolute;
+    top: -80px;
+    right: 12px;
+  }
 }
 
 .main-menu__list {
@@ -28,6 +45,10 @@
 
   &--opened {
     display: flex;
+  }
+
+  @media (min-width: $mobile-land) {
+
   }
 }
 

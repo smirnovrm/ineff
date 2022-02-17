@@ -31,11 +31,22 @@
 
     background-color: #F7F9FC;
 
+    @media (min-width: $mobile-land) {
+      align-items: center;
 
+      padding-top: 28px;
+      padding-bottom: 28px;
+      padding-left: 43px;
+      padding-right: 32px;
+    }
   }
 
   li + li {
     margin-top: 8px;
+
+    @media (min-width: $mobile-land) {
+      margin-top: 16px;
+    }
   }
 
   span {
@@ -54,4 +65,12 @@
   min-width: 48px;
   margin-right: 14px;
   fill: transparent;
+
+  @media (min-width: $mobile-land) {
+    width: 65px;
+    height: auto;
+    min-width: 65px;
+
+    margin-right: 22px;
+  }
 }
