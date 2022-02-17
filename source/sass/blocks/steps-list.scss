@@ -22,6 +22,11 @@
   background: $basic-background;
   border-radius: 20px;
 
+  @media (min-width: $mobile-land) {
+    padding: 34px;
+    padding-left: 151px;
+  }
+
   &::before {
     display: flex;
     justify-content: center;
@@ -48,6 +53,15 @@
     content: counters(section,".") " ";
 
     z-index: 3;
+
+    @media (min-width: $mobile-land) {
+      left: 44px;
+      width: 56px;
+      height: 56px;
+      font-size: 20px;
+      line-height: 23px;
+      border-width: 3px;
+    }
   }
 
   &::after {
@@ -65,6 +79,11 @@
     background-color: #0039A9;
 
     z-index: 2;
+
+    @media (min-width: $mobile-land) {
+      left: 71px;
+      width: 3px;
+    }
   }
 
   span {
@@ -85,6 +104,10 @@
 
 .steps-list__item + .steps-list__item {
   margin-top: 8px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 16px;
+  }
 }
 
 .steps-list__item:last-child {

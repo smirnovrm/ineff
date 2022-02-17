@@ -22,6 +22,10 @@
   text-transform: uppercase;
 
   border: 0;
+
+  @media (min-width: $mobile-land) {
+    max-width: initial;
+  }
 }
 
 .btn--max {

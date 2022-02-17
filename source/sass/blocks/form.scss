@@ -5,4 +5,8 @@
 
 .form__input + .form__input {
   margin-top: 8px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 12px;
+  }
 }

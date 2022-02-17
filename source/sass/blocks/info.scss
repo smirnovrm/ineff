@@ -9,6 +9,8 @@
 
   @media (min-width: $mobile-land) {
     padding-bottom: 47px;
+
+    background-image: url('../img/more-info-mobile-land-background.jpg');
   }
 
   // &--top {
@@ -34,6 +36,10 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 130%;
+
+    @media (min-width: $mobile-land) {
+      margin-top: 16px;
+    }
   }
 
   a {
@@ -94,8 +100,35 @@
 
 .info__form {
   margin-top: 28px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 26px;
+  }
 }
 
 .info__btn {
   margin-top: 8px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 12px;
+  }
+}
+
+.info__form-wrap {
+  @media (min-width: $mobile-land) {
+
+    padding: 56px 48px;
+
+    border-radius: 20px;
+    background-color: $basic-background;
+
+    .heading--light {
+      max-width: 307px;
+      color: $basic-blue;
+    }
+
+    p {
+      color: $basic-black;
+    }
+  }
 }

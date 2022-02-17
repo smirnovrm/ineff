@@ -17,8 +17,18 @@
   background: $basic-background;
   border-radius: 20px;
 
+  @media (min-width: $mobile-land) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+  }
+
   p {
     max-width: 261px;
+
+    @media (min-width: $mobile-land) {
+      max-width: initial;
+    }
   }
 
   p + p {
@@ -28,6 +38,10 @@
 
 .feature-list__item + .feature-list__item {
   margin-top: 8px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 16px;
+  }
 }
 
 .feature-list__heading {
