@@ -7,6 +7,11 @@
   justify-content: space-around;
 
   border-bottom: 2px solid #D3D3D3;
+
+  @media (min-width: $mobile-land) {
+    padding-left: 2px;
+    justify-content: start;
+  }
 }
 
 .tabs__control {
@@ -31,6 +36,11 @@
   background-repeat: no-repeat;
   background-position: left 0 bottom 0;
 
+  @media (min-width: $mobile-land) {
+    max-width: 217px;
+    background-image: url('../img/icons/tabs-mobland.svg');
+  }
+
   &--active {
     // background-color: $basic-blue;
     // bottom: -2px;
@@ -38,6 +48,10 @@
     background-image: url('../img/icons/tabs-active.svg');
 
     color: $basic-white;
+
+    @media (min-width: $mobile-land) {
+      background-image: url('../img/icons/tabs-active-mobland.svg');
+    }
   }
 }
 

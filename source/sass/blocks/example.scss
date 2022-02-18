@@ -3,6 +3,10 @@
 
   background-color: $basic-background;
 
+  @media (min-width: $mobile-land) {
+    margin-top: 56px;
+  }
+
   p {
     margin-top: 36px;
 
@@ -24,8 +28,16 @@
 
 .example__form {
   margin-top: 16px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 26px;
+  }
 }
 
 .example__btn {
   margin-top: 8px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 0;
+  }
 }

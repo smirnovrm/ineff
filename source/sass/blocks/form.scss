@@ -10,3 +10,9 @@
     margin-top: 12px;
   }
 }
+
+.form--example {
+  @media (min-width: $mobile-land) {
+    flex-direction: row;
+  }
+}

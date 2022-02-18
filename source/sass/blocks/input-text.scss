@@ -10,6 +10,18 @@
   border: 1px solid #D3D3D3;
   box-sizing: border-box;
   border-radius: 8px;
+}
 
+.input-text--example {
+  @media (min-width: $mobile-land) {
+    max-width: 298px;
 
+    padding-top: 21px;
+    padding-bottom: 20px;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    border-right-width: 0;
+  }
 }
