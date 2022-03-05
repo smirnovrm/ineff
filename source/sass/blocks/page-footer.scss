@@ -13,12 +13,35 @@
 
 .page-footer__navigation {
   margin-top: 32px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 0;
+    max-width: 84px;
+  }
 }
 
 .page-footer__contact {
   margin-top: 43px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 0;
+    max-width: 179px;
+  }
 }
 
 .page-footer__products {
   margin-top: 43px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 0;
+    max-width: 146px;
+  }
+}
+
+.page-footer__inner-container {
+  @media (min-width: $mobile-land) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+  }
 }

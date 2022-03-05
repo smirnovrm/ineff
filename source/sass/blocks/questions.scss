@@ -5,10 +5,30 @@
 
   color: $basic-white;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/question-mobile-background@2x.jpg');
+  }
+
   p {
     margin-top: 28px;
     font-size: 14px;
     line-height: 130%;
+
+    @media (min-width: $mobile-land) {
+      max-width: 336px;
+    }
+  }
+
+  @media (min-width: $mobile-land) {
+    background-image: url('../img/question-mobil-land-background.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/question-mobile-land-background@2x.jpg');
+    }
+
+    .wrapper {
+      padding-right: 70px;
+    }
   }
 
 }

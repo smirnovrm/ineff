@@ -8,6 +8,32 @@
 
 .case__slider {
   margin-top: 28px;
+
+  .slider__slide:first-child {
+    display: flex;
+  }
+
+  .slider__slide {
+    display: none;
+    @media (min-width: $mobile-land) {
+      display: flex;
+    }
+  }
+
+  .slider__dots {
+    @media (min-width: $mobile-land) {
+      margin-left: 0;
+      justify-content: center;
+    }
+  }
+
+  .slider__dot:nth-child(5),
+  .slider__dot:nth-child(6),
+  .slider__dot:nth-child(7) {
+    @media (min-width: $mobile-land) {
+      display: none;
+    }
+  }
 }
 
 .case__main {
