@@ -6,6 +6,21 @@
   padding-top: 57px;
   padding-bottom: 56px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/cases-background-mobile@2x.jpg');
+  }
+
+  @media (min-width: $mobile-land) {
+    padding-top: 78px;
+    padding-bottom: 78px;
+
+    background-image: url('../../img/cases-background-mobile-land.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/cases-background-mobile-land@2x.jpg');
+    }
+  }
+
   .wrapper {
     padding-left: 49px;
   }

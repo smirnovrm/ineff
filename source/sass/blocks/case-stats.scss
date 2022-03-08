@@ -16,8 +16,19 @@
 
   background-color: rgba($basic-blue, 0.5);
 
+  @media (min-width: $mobile-land) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 52px;
+    padding-right: 39px;
+  }
+
   &--fullscreen {
     padding-left: 16px;
+
+    @media (min-width: $mobile-land) {
+      padding-left: 80px;
+    }
   }
 
 }

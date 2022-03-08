@@ -8,6 +8,10 @@
 
   * + * {
     margin-left: 6px;
+
+    @media (min-width: $mobile-land) {
+      margin-left: 31px;
+    }
   }
 
   span {
@@ -21,12 +25,25 @@
     text-align: right;
 
     color: $list-accent;
+
+    @media (min-width: $mobile-land) {
+      min-width: 90px;
+
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.05em;
+    }
   }
 }
 
 .case-stats--fullscreen .statistics-list__item {
   * + * {
     margin-left: 0;
+
+    @media (min-width: $mobile-land) {
+      margin-left: 31px;
+    }
   }
 
   span {
@@ -36,4 +53,8 @@
 
 .statistics-list__item + .statistics-list__item {
   margin-top: 12px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 22px;
+  }
 }
