@@ -40,6 +40,11 @@
 
   background-color: transparent;
   border: 2px solid $basic-blue;
+
+  @media (min-width: $mobile-land) {
+    max-width: 260px;
+    margin-left: auto;
+  }
 }
 
 .btn--example {

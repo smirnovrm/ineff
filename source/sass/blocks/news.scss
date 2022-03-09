@@ -1,9 +1,22 @@
 .news {
-
+  @media (min-width: $mobile-land) {
+    max-width: 260px;
+  }
 }
 
 .news + .news {
   margin-top: 8px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 0;
+  }
+}
+
+.news:not(:nth-child(1)),
+.news:not(:nth-child(2)) {
+  @media (min-width: $mobile-land) {
+    margin-top: 12px;
+  }
 }
 
 .news__main {
@@ -20,6 +33,13 @@
   border-radius: 0px 0px 20px 20px;
 
   font-size: 14px;
+
+  @media (min-width: $mobile-land) {
+    padding-top: 24px;
+    padding-right: 18px;
+    padding-bottom: 28px;
+    padding-left: 27px;
+  }
 
   * + * {
     margin-top: 12px;
@@ -51,4 +71,8 @@
 
 .news__btn-load {
   margin-top: 32px;
+
+  @media (min-width: $mobile-land) {
+    margin-top: 39px;
+  }
 }

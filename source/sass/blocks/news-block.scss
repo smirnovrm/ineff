@@ -1,0 +1,9 @@
+.news-block {
+  .wrapper {
+    @media (min-width: $mobile-land) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
