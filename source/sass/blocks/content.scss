@@ -2,12 +2,23 @@
   .wrapper {
     font-size: 16px;
     color: $basic-black;
+
+    @media (min-width: $mobile-land) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   time {
     font-weight: 700;
     color: $special-time-gray;
     line-height: 18.75px;
+
+    @media (min-width: $mobile-land) {
+      display: flex;
+      position: relative;
+      top: -25px;
+    }
   }
 
   p {
@@ -21,6 +32,10 @@
 
   p:first-of-type {
     margin-top: 24px;
+
+    @media (min-width: $mobile-land) {
+      margin-top: 10px;
+    }
   }
 
   img {
@@ -35,4 +50,13 @@
 
 .content__social {
   margin-top: 24px;
+
+  @media (min-width: $mobile-land ) {
+    margin-top: 0;
+    position: relative;
+    order: -1;
+    margin-left: auto;
+    width: 290px;
+  }
+
 }

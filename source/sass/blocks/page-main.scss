@@ -18,6 +18,10 @@
 
 .page-main--content {
   padding-top: 47px;
+
+  @media (min-width: $mobile-land) {
+    padding-top: 56px;
+  }
 }
 
 .page-main__section.company-stats {
