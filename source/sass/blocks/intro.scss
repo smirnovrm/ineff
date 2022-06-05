@@ -33,7 +33,19 @@
 }
 
 .intro--about {
-  background-image: url('../../img/about-company-bg.jpg');
+  background-image: url('../../img/about-company-mobile-bg.jpg');
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/about-company-mobile-bg@2x.jpg');
+  }
+
+  @media (min-width: $mobile-land) {
+    background-image: url('../../img/about-company-mobile-land-bg.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/about-company-mobile-land-bg@2x.jpg');
+    }
+  }
 
   .wrapper {
     padding-left: 19px;

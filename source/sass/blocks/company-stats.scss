@@ -6,5 +6,10 @@
 
     background: $basic-background;
     border-radius: 20px;
+
+    @media (min-width: $mobile-land) {
+      padding-top: 44px;
+      padding-bottom: 42px;
+    }
   }
 }
