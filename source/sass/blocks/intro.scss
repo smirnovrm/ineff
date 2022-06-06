@@ -55,6 +55,18 @@
 .intro--contacts {
   background-image: url('../../img/contacts-header-bg.jpg');
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/contacts-header-bg@2x.jpg');
+  }
+
+  @media (min-width: $mobile-land) {
+    background-image: url('../../img/contacts-header-mobile-land-bg.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/contacts-header-mobile-land-bg@2x.jpg');
+    }
+  }
+
   .wrapper {
     padding-left: 27px;
   }

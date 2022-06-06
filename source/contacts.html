@@ -46,34 +46,35 @@
       <div class="wrapper">
 
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__box contacts__box--email">
-          <span>Email</span>
-          <a href="mailto:info@ineff.ru">info@ineff.ru</a>
-          <a href="mailto:sale@ineff.ru">sale@ineff.ru</a>
+        <div class="contacts__wrapper">
+          <div class="contacts__box contacts__box--email">
+            <span>Email</span>
+            <a href="mailto:info@ineff.ru">info@ineff.ru</a>
+            <a href="mailto:sale@ineff.ru">sale@ineff.ru</a>
+          </div>
+          <div class="contacts__box contacts__box--phone">
+            <span>Телефон</span>
+            <a href="tel:88005512028">8 (800) 551-20-28</a>
+            <span>Пн-Пт с 9:00 до 18:00 по мск</span>
+          </div>
+          <div class="contacts__box contacts__box--address">
+            <span>Адрес</span>
+            <address>г. Санкт-Петербург, ул. Краснопутиловская, 69</address>
+          </div>
         </div>
-        <div class="contacts__box contacts__box--phone">
-          <span>Телефон</span>
-          <a href="tel:88005512028">8 (800) 551-20-28</a>
-          <span>Пн-Пт с 9:00 до 18:00 по мск</span>
-        </div>
-        <div class="contacts__box contacts__box--address">
-          <span>Адрес</span>
-          <address>г. Санкт-Петербург, ул. Краснопутиловская, 69</address>
-        </div>
-
         <div class="contacts__map yandex-map">
           <div class="yandex-map__box">
             <picture>
+              <source media="(min-width: 568px)" type="image/webp" srcset="img/city-map-mobile-land.webp 1x, img/city-map-mobile-land@2x.webp 2x">
+              <source media="(min-width: 568px)" srcset="img/city-map-mobile-land.png 1x, img/city-map-mobile-land@2x.png 2x">
               <source type="image/webp" srcset="img/city-map.webp 1x, img/city-map@2x.webp 2x">
-              <img src="img/city-map.png" srcset="img/city-map@2x.png 2x" alt="Карта проезда" width="304" height="522">
+              <img src="img/city-map.png" srcset="img/city-map@2x.png 2x" alt="Карта проезда">
             </picture>
           </div>
         </div>
 
       </div>
     </section>
-
-
 
     <section class="page-main__section questions">
       <div class="wrapper">
@@ -95,43 +96,45 @@
       <a class="page-footer__logo logo" href="">
         <img src="img/icons/logo.svg" width="79" height="48" alt="Логотип ИНЭФФ">
       </a>
-      <div class="page-footer__navigation navigation">
-        <h3 class="heading--subhead">Навигация по сайту</h3>
-        <ul class="menu-footer navigation__menu">
-          <li class="menu-footer__item">
-            <a class="menu-footer__link" href="">Главная</a>
-          </li>
-          <li class="menu-footer__item">
-            <a class="menu-footer__link" href="">Новости</a>
-          </li>
-          <li class="menu-footer__item">
-            <a class="menu-footer__link" href="">О компании</a>
-          </li>
-          <li class="menu-footer__item">
-            <a class="menu-footer__link" href="">Кейсы</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__contact contact">
-        <h3 class="heading--subhead">Контактная информация</h3>
-        <a href="mailto:info@ineff.ru">info@ineff.ru</a>
-        <a href="tel:+78126029199">+7 (812) 602 91 99</a>
-        <address>г. Санкт-Петербург, ул.&nbsp;Краснопутиловская, 69</address>
-        <a href="#">Скачать реквизиты</a>
-      </div>
-      <div class="page-footer__products products">
-        <h3 class="heading--subhead">Дистрибуируемые продукты</h3>
-        <ul class="products-menu products__menu">
-          <li class="products-menu__item">
-            <a class="products-menu__link" href="">СметаПлан</a>
-          </li>
-          <li class="products-menu__item">
-            <a class="products-menu__link" href="">Индиго.Конструктор</a>
-          </li>
-          <li class="products-menu__item">
-            <a class="products-menu__link" href="">NormaCS</a>
-          </li>
-        </ul>
+      <div class="page-footer__inner-container">
+        <div class="page-footer__navigation navigation">
+          <h3 class="heading--subhead">Навигация по сайту</h3>
+          <ul class="menu-footer navigation__menu">
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="">Главная</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="">Новости</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="">О компании</a>
+            </li>
+            <li class="menu-footer__item">
+              <a class="menu-footer__link" href="">Кейсы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__contact contact">
+          <h3 class="heading--subhead">Контактная информация</h3>
+          <a href="mailto:info@ineff.ru">info@ineff.ru</a>
+          <a href="tel:+78126029199">+7 (812) 602 91 99</a>
+          <address>г. Санкт-Петербург, ул.&nbsp;Краснопутиловская, 69</address>
+          <a href="#">Скачать реквизиты</a>
+        </div>
+        <div class="page-footer__products products">
+          <h3 class="heading--subhead">Дистрибуируемые продукты</h3>
+          <ul class="products-menu products__menu">
+            <li class="products-menu__item">
+              <a class="products-menu__link" href="">СметаПлан</a>
+            </li>
+            <li class="products-menu__item">
+              <a class="products-menu__link" href="">Индиго.Конструктор</a>
+            </li>
+            <li class="products-menu__item">
+              <a class="products-menu__link" href="">NormaCS</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="page-footer__copyright copyright">
