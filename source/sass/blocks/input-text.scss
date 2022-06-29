@@ -10,6 +10,12 @@
   border: 1px solid #D3D3D3;
   box-sizing: border-box;
   border-radius: 8px;
+
+  @media (min-width: $tablet) {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    padding-left: 29px;
+  }
 }
 
 .input-text--example {

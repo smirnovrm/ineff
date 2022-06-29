@@ -16,6 +16,10 @@
   @media (min-width: $mobile-land) {
     margin-top: 35px;
   }
+
+  @media (min-width: $tablet) {
+    margin-top: 40px;
+  }
 }
 
 .help-us__block h3 {
@@ -31,15 +35,29 @@
   @media (min-width: $mobile-land) {
     margin-bottom: 23px;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    line-height: 28.13px;
+  }
 }
 
 .help-us__block p {
   font-size: $font-size-14;
   line-height: 18.2px;
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-16;
+    line-height: 20.8px;
+  }
 }
 
 .help-us__block p + p {
   margin-top: 8px;
+
+  @media (min-width: $tablet) {
+    margin-top: 12px;
+  }
 }
 
 .help-us__block b {
@@ -58,6 +76,10 @@
   @include reset-list;
   margin-bottom: 14px;
 
+  @media (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+
   li {
     display: flex;
 
@@ -72,6 +94,12 @@
       max-width: 470px;
       align-items: center;
     }
+
+    @media (min-width: $tablet) {
+      max-width: 670px;
+      font-size: $font-size-16;
+      line-height: 18.75px;
+    }
   }
 
   li + li {
@@ -79,6 +107,10 @@
 
     @media (min-width: $mobile-land) {
       margin-top: 8px;
+    }
+
+    @media (min-width: $tablet) {
+      margin-top: 12px;
     }
   }
 

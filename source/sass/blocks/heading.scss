@@ -8,6 +8,11 @@
 
   color: $basic-blue;
 
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 140%;
+  }
+
   &--letter {
     letter-spacing: 0.029em;
   }

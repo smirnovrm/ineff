@@ -10,6 +10,11 @@
   color: #fff;
   background-color: #f5543f;
   border-radius: 8px;
+
+  @media (min-width: $tablet) {
+    font-size: $font-size-16;
+    line-height: 18.75px;
+  }
 }
 
 .btn--large {

@@ -10,6 +10,11 @@
     text-transform: uppercase;
 
     color: $basic-blue;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-36;
+      line-height: 50.4px;
+    }
   }
 }
 

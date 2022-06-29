@@ -7,10 +7,28 @@
 
   color: $basic-white;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/more-info-mobile-background@2x.jpg');
+  }
+
   @media (min-width: $mobile-land) {
     padding-bottom: 47px;
 
     background-image: url('../img/more-info-mobile-land-background.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/more-info-mobile-land-background@2x.jpg');
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 80px;
+
+    background-image: url('../img/more-info-tablet-background.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/more-info-tablet-background@2x.jpg');
+    }
   }
 
   // &--top {
@@ -27,6 +45,12 @@
     @media (min-width: $mobile-land) {
       max-width: 431px;
     }
+
+    @media (min-width: $tablet) {
+      font-size: 42px;
+      max-width: initial;
+      line-height: 49.22px;
+    }
   }
 
   p {
@@ -39,6 +63,11 @@
 
     @media (min-width: $mobile-land) {
       margin-top: 16px;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-16;
+      line-height: 20.8px;
     }
   }
 
@@ -81,6 +110,16 @@
     }
   }
 
+  @media (min-width: $tablet) {
+    padding-top: 63px;
+    padding-bottom: 83px;
+    background-image: url('../img/promo-tablet_bg.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/promo-tablet_bg@2x.jpg');
+    }
+  }
+
   p {
     margin-top: 16px;
     font-weight: 500;
@@ -90,11 +129,22 @@
     @media (min-width: $mobile-land) {
       margin-top: 22px;
     }
+
+    @media (min-width: $tablet) {
+      max-width: 500px;
+      margin-top: 34px;
+      font-size: 24px;
+
+    }
   }
 
   .btn {
     margin-top: 30px;
     max-width: 330px;
+
+    @media (min-width: $tablet) {
+      margin-top: 34px;
+    }
   }
 }
 
@@ -103,6 +153,18 @@
 
   @media (min-width: $mobile-land) {
     margin-top: 26px;
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 334px;
+  }
+
+  .input-text {
+    @media (min-width: $tablet) {
+      font-size: $font-size-16;
+      line-height: 20.8px;
+      color: $input-text-gray;
+    }
   }
 }
 
@@ -129,6 +191,20 @@
 
     p {
       color: $basic-black;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 622px;
+    margin: 0 auto;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-right: 60px;
+    padding-left: 76px;
+
+    .heading--light {
+      max-width: 464px;
     }
   }
 }

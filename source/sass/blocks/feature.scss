@@ -5,20 +5,34 @@
     font-size: $font-size-14;
     line-height: 18px;
     color: $basic-darkgray;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-16;
+      line-height: 20.8px;
+    }
   }
 
   .heading {
     font-weight: bold;
     font-size: $font-size-24;
 
-    line-height: 31px;
+    line-height: 31.2px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: $basic-blue;
+
+    @media (min-width: $tablet) {
+      font-size: $font-size-36;
+      line-height: 50.4px;
+    }
   }
 
   .feature__list {
     margin-top: 28px;
+
+    @media (min-width: $tablet) {
+      margin-top: 63px;
+    }
   }
 }

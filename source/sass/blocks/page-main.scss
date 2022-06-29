@@ -10,6 +10,17 @@
     padding-top: 56px;
     padding-bottom: 56px;
   }
+
+  @media (min-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.page-main__section.example {
+  @media (min-width: $tablet) {
+    padding-top: 100px;
+  }
 }
 
 .page-main__clients {

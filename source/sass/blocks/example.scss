@@ -7,6 +7,10 @@
     margin-top: 56px;
   }
 
+  @media (min-width: $tablet) {
+    margin-top: 80px;
+  }
+
   p {
     margin-top: 36px;
 
@@ -15,6 +19,14 @@
     line-height:29px;
 
     color: $basic-darkgray;
+
+    @media (min-width: $tablet) {
+      margin-top: 40px;
+      max-width: 568px;
+
+      font-size: 24px;
+      line-height:31.2px;
+    }
   }
 
   iframe {
@@ -24,6 +36,10 @@
 
 .example__tabs {
   margin-top: 28px;
+
+  @media (min-width: $tablet) {
+    margin-top: 54px;
+  }
 }
 
 .example__form {

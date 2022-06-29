@@ -11,6 +11,10 @@
 
     z-index: 1;
   }
+
+  @media (min-width: $tablet) {
+    right: -30px;
+  }
 }
 
 .main-menu__button {
@@ -29,6 +33,10 @@
     position: absolute;
     top: -80px;
     right: 12px;
+  }
+
+  @media (min-width: $tablet) {
+    right: 29px;
   }
 }
 
@@ -49,6 +57,11 @@
 
   @media (min-width: $mobile-land) {
 
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 60px;
+    margin-bottom: 67px;
   }
 }
 
