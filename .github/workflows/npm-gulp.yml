@@ -25,4 +25,5 @@ jobs:
     - name: Build
       run: |
         npm install
-        gulp build && gh-pages -d build
+        gulp build
+        gulp deploy
