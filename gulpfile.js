@@ -13,6 +13,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const ghPages = require('gulp-gh-pages');
 
 // HTML
 
@@ -159,6 +160,14 @@ const watcher = () => {
   gulp.watch("source/js/app.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
+
+// Deploy
+
+const deploy = () => {
+  return gulp.src('./build/**/*')
+        .pipe(ghPages());
+}
+exports.deploy = deploy;
 
 exports.build = gulp.series(
   clean,
