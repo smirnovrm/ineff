@@ -49,5 +49,7 @@
   "engines": {
     "node": "14.15.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages" : "^1.2.0"
+  }
 }
